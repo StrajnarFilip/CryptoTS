@@ -23,7 +23,7 @@ function ForClarity() {
     // For string, simply use in built TextEncoder
     var txtenc = new TextEncoder();
     var txtdec = new TextDecoder();
-    var string_encoded = BytesToPromise(txtenc.encode("Any string you wish. JSON stringify for JSON objects. If you're RSA there is a limit of 512 bytes!"));
+    var string_encoded = BytesToPromise(txtenc.encode("Any string you wish. JSON stringify for JSON objects. If you're using RSA, there is a limit of 512 bytes!"));
     string_encoded.then(function (encoded_str) {
         console.log("Checking string before encryption (array of bytes):");
         console.log(encoded_str);
